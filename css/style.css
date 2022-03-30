@@ -400,8 +400,16 @@ ul.nav li.active a:before {
 /*Why_us-stylesheets-include-here*/
 #Why_us {
 	padding: 4% 0% 0% 2%;
-	text-align:center
+	font-family: 'helvetica_ce_55_romanregular' ;
 }
+#Why_us .heading{
+	text-align: center;
+}
+#Why_us .pading p{
+	text-align: center;
+	font-family: 'helvetica_ce_55_romanregular';
+}
+
 /*About-stylesheets-include-here*/
 #about {
 	padding:3% 0%;
@@ -459,10 +467,11 @@ ul.nav li.active a:before {
 .media.service-box {
 	margin: 25px 0;
 }
-.media.service-box .pull-left {
+/* icon design */
+.media.service-box .pull {
 	margin-right: 20px;
 }
-.media.service-box .pull-left > i {
+.media.service-box .pull> i {
 	font-size: 24px;
 	height: 64px;
 	line-height: 64px;
@@ -474,7 +483,7 @@ ul.nav li.active a:before {
 	transition: background-color 400ms, background-color 400ms;
 	position: relative;
 }
-.media.service-box:hover .pull-left > i {
+.media.service-box:hover .pull > i {
 	background:#e73131;
 	color:#fff;
 	transform:rotateY(360deg);
@@ -488,7 +497,8 @@ ul.nav li.active a:before {
 }
 .media-body h5 {
 	font-weight:bolder;
-	text-align:left;
+	text-align:center;
+	padding-top: 2rem;
 }
 .media-body p {
 	text-align:justify;
