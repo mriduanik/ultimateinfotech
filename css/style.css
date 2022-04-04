@@ -168,6 +168,10 @@ strong {
 span {
 	color:#e73131;
 }
+cite{
+	font-size: large;
+	font-weight: bolder;
+}
 .space {
 	margin:30px 0px;
 }
@@ -405,8 +409,8 @@ ul.nav li.active a:before {
 #Why_us .heading{
 	text-align: center;
 }
-#Why_us .pading p{
-	text-align: center;
+#Why_us .text-left{
+	text-align: left;
 	font-family: 'helvetica_ce_55_romanregular';
 }
 
@@ -469,7 +473,7 @@ ul.nav li.active a:before {
 }
 /* icon design */
 .media.service-box .pull {
-	margin-right: 20px;
+	
 }
 .media.service-box .pull> i {
 	font-size: 24px;
@@ -891,7 +895,7 @@ a.btn-blg:hover {
 	transition-duration: 0.3s;
 }
 .team-sec {
-	border:1px solid #eee;
+	border:1px solid rgb(243, 243, 243);
 	border-radius: 1rem;
 }
 .team-main-sec:hover .team-sec {
