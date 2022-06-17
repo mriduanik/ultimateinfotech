@@ -24,6 +24,17 @@
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
 <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+
+<script src="js/script2.js" > </script>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("5xInkXN1OpnpRejrg");
+    })();
+</script>
+
 <!-- font awosem icon cdn -->
 
 
@@ -47,7 +58,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="#menu"><img src="images/Logo/01.png" width="80" height="30"  alt=""></a> </div>
+          <a class="navbar-brand" href="#menu"><img src="images/Logo/01.png" width="90" height="40"  alt=""></a> </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
@@ -565,16 +576,12 @@
         </ul>
       </div>
       <!--from section start here-->
-      <div class="col-md-6 col-sm-6 wow slideInUp">
-        <form class="wow slideInUp" method="post">
-          <input type="text"id="name" class="form-control m-2" placeholder="Name" required="required">
-          <input type="email" id="email" class="form-control" placeholder="Email Address" required="required">
-          <input type="text" id="subject" class="form-control" placeholder="Subject" required="required">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
-          <button class="form-control" id="btn">Send Now</button>
-  </form>
-       
-      </div>
+      <div class="col-md-6 col-sm-6">
+        <input class="form-control"  type="text"id="toname" placeholder="Name" required="required">
+        <input class="form-control" type="email" id="toemail" placeholder="email" required="required">
+        <textarea class="form-control" name="message" id="message"  rows="4" placeholder="Enter your message" required="required"></textarea>
+        <button class="form-control" onclick="sendMail()" >Send Now</button>
+    </div>
 </section>
 <footer id="footer">
   <div class="bg-sec">
@@ -620,34 +627,9 @@
 <script type="text/javascript" src="js/owl.carousel.js"></script>
 <!--Main-Scripts-->
 <script type="text/javascript" src="js/script.js"></script>
+
 </body>
-
-
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-
-<script>
-  var btn = document.getElementById('btn');
-  btn.addEventListener('click',function(e){
-    e.preventDefault()
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var subject = document.getElementById('subject').value;
-    var message = document.getElementById('message').value;
-    var body = 'Name: 🤵 ' +name + '<br/> Email: 📧 ' +email +'<br/> Subject:' + subject + '<br/> Message: 💬 ' + message;
-    Email.send({
-      Host: "smtp.elasticemail.com", 
-      Username: "Ultimateinfotech@gmail.com",
-      Password: "D55DECFC4A8ADD5E619995F3AA0EE58FFD0C",
-      To: "ultimateinfotechs@gmail.com",
-      From: "sharifhossainanik03@gmail.com",
-      Subject : subject,
-      Body : body
-}).then(
-  message => alert("Thank you for contact with us")
-);
-  })
-</script>
 </html>
+
 
 
