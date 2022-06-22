@@ -236,8 +236,10 @@ a.btn-send:hover {
 .navbar-default {
 	background:rgba(248, 248, 248, 0);
 	border:rgba(248, 248, 248, 0);
+
+	
 	padding:5px 5px;
-	height: 85px;
+	
 	
 }
 a.navbar-brand img {
